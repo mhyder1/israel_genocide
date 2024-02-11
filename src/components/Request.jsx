@@ -7,16 +7,7 @@ export default function Request() {
     <>
       <h1>Request for provisional measures</h1>
       {pages.map((item) => (
-        <>
-          <Card data={item} />
-          {item.subtext && (
-            <ul class="list-group">
-              {item.subtext.map((text) => (
-                <li class="list-group-item">{text}</li>
-              ))}
-            </ul>
-          )}
-        </>
+        <Card data={item} />
       ))}
     </>
   );
