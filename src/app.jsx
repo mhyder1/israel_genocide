@@ -65,12 +65,12 @@ export function App() {
       </ul>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/introduction/*" element={<Intro data={data} />} />
+        <Route path="/introduction/*" element={<Intro />} />
         <Route path="/jurisdiction" element={<Jurisdiction />} />
         <Route path="/facts" element={<Facts />} />
         <Route path="/claims" element={<Claims />} />
         <Route path="/relief" element={<Relief />} />
-        <Route path="/request" element={<Request />} />
+        <Route path="/request/*" element={<Request />} />
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/appointment" element={<Appointment />} />
         <Route path="/introduction" element={<Intro />} />

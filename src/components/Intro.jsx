@@ -1,12 +1,18 @@
-import { useState } from "preact/hooks";
-import { Link, Routes, Route } from "react-router-dom";
+import { useState, useLayoutEffect } from "preact/hooks";
+import { Link, Routes, Route, useParams } from "react-router-dom";
 import Card from "./Card";
 import data from "../data";
 
 export default function Intro() {
+  const params = useParams();
+  const [initialActiveLink] = Object.values(params);
   const pages = data.slice(1, 8);
-  const [activeLink, setActiveLink] = useState(1);
+  const [activeLink, setActiveLink] = useState(initialActiveLink);
 
+  useLayoutEffect(() => {
+    setActiveLink(initialActiveLink);
+  }, [initialActiveLink]);
+  // console.log(activeLink);
   const navigation = pages.map(({ page }) => (
     <li
       class={`page-item ${activeLink === page ? "active" : ""}`}
