@@ -15,6 +15,7 @@ import Request from "./components/Request";
 import Jurisdiction from "./components/Jurisdiction";
 import Reservation from "./components/Reservation";
 import NotFound from "./components/NotFound";
+import Search from "./components/Search";
 import data from "./data";
 export function App() {
   const [count, setCount] = useState(0);
@@ -62,6 +63,9 @@ export function App() {
         <li>
           <Link to="/appointment">Appointment of agent</Link>
         </li>
+        <li>
+          <Link to="/search">Search</Link>
+        </li>
       </ul>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -74,6 +78,7 @@ export function App() {
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/appointment" element={<Appointment />} />
         <Route path="/introduction" element={<Intro />} />
+        <Route path="/search" element={<Search />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
