@@ -20,14 +20,7 @@ import data from "./data";
 export function App() {
   const [count, setCount] = useState(0);
   const [content, setContent] = useState([]);
-  // console.log(data.slice(1, 8));
-  // useEffect(() => {
-  //   fetch("https://genocide-server.onrender.com/data")
-  //     .then((res) => res.json())
-  //     .then((data) => setContent(data));
-  // }, []);
 
-  // console.log(content);
   const obj = {
     text: "this is a <strong>large piece of text</strong>",
   };
@@ -78,7 +71,7 @@ export function App() {
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/appointment" element={<Appointment />} />
         <Route path="/introduction" element={<Intro />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/search/*" element={<Search />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
