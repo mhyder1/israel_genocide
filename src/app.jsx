@@ -1,6 +1,4 @@
 import { useState, useEffect } from "preact/hooks";
-import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "./app.css";
 import parse from "html-react-parser";
@@ -16,11 +14,13 @@ import Jurisdiction from "./components/Jurisdiction";
 import Reservation from "./components/Reservation";
 import NotFound from "./components/NotFound";
 import Search from "./components/Search";
+import FactIntro from "./components/FactIntro";
+import FactBackground from "./components/FactBackground";
+import FactGenocidalActs from "./components/FactGenocidalActs";
+import FactExpressionsOfGenocide from "./components/FactExpressionsOfGenocide";
+import FactRecognitionOfGenocide from "./components/FactRecognitionOfGenocide";
 import data from "./data";
 export function App() {
-  const [count, setCount] = useState(0);
-  const [content, setContent] = useState([]);
-
   const obj = {
     text: "this is a <strong>large piece of text</strong>",
   };
@@ -40,6 +40,28 @@ export function App() {
         </li>
         <li>
           <Link to="/facts">The facts</Link>
+          <ul>
+            <li>
+              <Link to="/facts/introduction">Introduction</Link>
+            </li>
+            <li>
+              <Link to="/facts/background">Background</Link>
+            </li>
+            <li>
+              <Link to="/facts/genocidal_acts">Genocidal acts</Link>
+            </li>
+            <li>
+              <Link to="/facts/expressions_of_genocide">
+                Expressions of Genocidal Intent against the Palestinian People
+                by Israeli State Officials and Others
+              </Link>
+            </li>
+            <li>
+              <Link to="/facts/recognition_of_genocide">
+                Recognition of Israel’s genocidal intent against Palestinians
+              </Link>
+            </li>
+          </ul>
         </li>
         <li>
           <Link to="/claims">The claims of South Africa</Link>
@@ -64,7 +86,19 @@ export function App() {
         <Route path="/" element={<Home />} />
         <Route path="/introduction/*" element={<Intro />} />
         <Route path="/jurisdiction" element={<Jurisdiction />} />
-        <Route path="/facts" element={<Facts />} />
+        <Route path="/facts/*" element={<Facts />}>
+          <Route path="introduction/*" element={<FactIntro />} />
+          <Route path="background" element={<FactBackground />} />
+          <Route path="genocidal_acts" element={<FactGenocidalActs />} />
+          <Route
+            path="expressions_of_genocide"
+            element={<FactExpressionsOfGenocide />}
+          />
+          <Route
+            path="recognition_of_genocide"
+            element={<FactRecognitionOfGenocide />}
+          />
+        </Route>
         <Route path="/claims" element={<Claims />} />
         <Route path="/relief" element={<Relief />} />
         <Route path="/request/*" element={<Request />} />

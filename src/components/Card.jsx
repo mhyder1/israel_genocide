@@ -1,5 +1,4 @@
 export default function Card({ data }) {
-  //   console.log({ page, content });
   return (
     <div class="card">
       <div class="card-body">

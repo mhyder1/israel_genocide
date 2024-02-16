@@ -3,11 +3,11 @@ import Card from "./Card";
 
 export default function LocalRoutes({ pages }) {
   const createRoutes = (pages) => {
-    return pages.map(({ page }) => (
+    return pages.map(({ page }, index) => (
       <Route
         key={page}
         path={`/${page}`}
-        element={<Card data={pages[page - 1]} />}
+        element={<Card data={pages[index]} />}
       />
     ));
   };
