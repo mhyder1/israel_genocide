@@ -1,14 +1,17 @@
 import data from "../data";
+import Navigation from "./Navigation";
+import LocalRoutes from "./LocalRoutes";
 export default function Relief() {
   // page 111
   // console.log();
   // possibly use a list group
   // display headings
-  const pages = data.slice(112, 113);
+  const pages = data.slice(111, 112);
+  console.log(pages);
   return (
     <>
       <h1>The relief sough</h1>
-      {pages.map((item) => (
+      {/* {pages.map((item) => (
         <>
           <p>{item.page}</p>
           <p>{item.content}</p>
@@ -25,7 +28,7 @@ export default function Relief() {
             </>
           ))}
         </>
-      ))}
+      ))} */}
     </>
   );
 }
