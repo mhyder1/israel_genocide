@@ -1,13 +1,15 @@
-import data from "../data";
-import Navigation from "./Navigation";
-import LocalRoutes from "./LocalRoutes";
+import { Outlet, useMatch } from "react-router-dom";
+import Page from "./Page";
+import { getData } from "../utils/getData";
 export default function Request() {
-  const pages = data.slice(113, 118);
+  const match = useMatch("request/*");
+  console.log(match);
+  const isMatch = match.params["*"];
+  const urlMatch = /^\d{3}$/.test(isMatch);
   return (
     <>
       <h1>Request for provisional measures</h1>
-      <Navigation pages={pages} />
-      <LocalRoutes pages={pages} />
+      {!isMatch || urlMatch ? <Page data={getData(112, 117)} /> : <Outlet />}
     </>
   );
 }

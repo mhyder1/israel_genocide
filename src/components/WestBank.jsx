@@ -2,7 +2,7 @@ import data from "../data";
 import Navigation from "./Navigation";
 import LocalRoutes from "./LocalRoutes";
 export default function WestBank() {
-  const pages = data.slice(101, 109);
+  const pages = data.slice(32, 40);
   console.log(pages);
   return (
     <>

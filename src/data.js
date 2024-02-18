@@ -734,7 +734,7 @@ const data = [
     page: 100,
     content: `On 3 November 2023, the World Health Organisation warned that “[m]aternal deaths are expected to increase given the lack of access to adequate care”, with deadly consequences on reproductive health, including a rise in stress-induced miscarriages, stillbirths and premature births.437 The impact will necessarily be long lasting and severe for Palestinians in Gaza as a group. By 22 November 2023 the United Nations Special Rapporteur on violence against women and girls, its causes and consequences, has expressly warned that:`,
     subtext: [
-      `“[T]he reproductive violence inflicted by Israel on Palestinian women, newborn babies, infants, and children could be qualified as… acts of genocide under Article 2 of the Convention on the Prevention of Genocide … including “imposing measures intended to prevent births within a group”. She stressed that “States must prevent and punish such acts in accordance with their responsibilities under the Genocide Convention.” 438`,
+      `<blockquote class="blockquote">“[T]he reproductive violence inflicted by Israel on Palestinian women, newborn babies, infants, and children could be qualified as… acts of genocide under Article 2 of the Convention on the Prevention of Genocide … including “imposing measures intended to prevent births within a group”. She stressed that “States must prevent and punish such acts in accordance with their responsibilities under the Genocide Convention.” 438</blockquote>`,
     ],
   },
   {
@@ -761,10 +761,10 @@ const data = [
     content: `Similar statements have been made by Israeli army officials, advisers and spokespersons, and others engaging with Israeli troops being deployed in Gaza:`,
     subtext: [
       "<strong>Israeli Army Coordinator of Government Activities in the Territories (‘COGAT’)</strong>: On 9 October 2023, in a video statement addressed to Hamas and Gaza residents, published by COGAT’s official channel, Major General Ghassan Alian warned: “Hamas became ISIS and the citizens of Gaza are celebrating instead of being horrified. Human animals are dealt with accordingly. Israel has imposed a total blockade on Gaza, no electricity, no water, just damage. You wanted hell, you will get hell.”465",
-      "<strong>Israeli Army Reservist Major General, former Head of the Israeli National Security Council, and adviser to the Defence Minister</strong>: On 7 October 2023, Giora Eiland, describing the Israeli order to cut off water and electricity to Gaza, wrote in an online journal: “This is what Israel has begun to do — we cut the supply of energy, water and diesel to the Strip . . . But it’s not enough. In order to make the siege effective, we have to prevent others from giving assistance to Gaza . . . The people should be told that they have two choices; to stay and to starve, or to leave. If Egypt and other countries prefer that these people will perish in Gaza, this is their choice.”467 On the same day, he asserted in a national newspaper that “[w]hen you are at war with another country you don't feed them, you don't provide them electricity or gas or water or anything else . . . A country can be attacked in a much broader way, to bring the country to the brink of dysfunction. This is the necessary outcome of events” in Gaza.468 He has repeatedly asserted the benefits for Israel of the creation of a humanitarian crisis in Gaza, stating that “Israel has no interest in the Gaza Strip being rehabilitated and this is an important point that needs to be made clear to the Americans”,469 and that “[i]f we ever want to see the hostages alive, the only way is to create a severe humanitarian crisis in Gaza”.470 He has indicated that water should be targeted, noting that water in Gaza “comes from wells with salt water unfit for consumption. They have water treatment plants, Israel should hit those plants. When the entire world says we have gone insane and this is a humanitarian disaster — we will say, it’s not an end, it’s a means.”471 In a Times radio interview on 12 October 2023, he reiterated the army should:",
-      `<blockquote>“[C]reate such a huge pressure on Gaza, that Gaza will become an area where people cannot live. People cannot live, until Hamas is destroyed, which means that Israel not only stops to supply energy, diesel, water, food … as we did in the last twenty years … but we should prevent any possible assistance by others, and to create in Gaza such a terrible, unbearable situation, that can last weeks and months”.472</blockquote>`,
+      `<strong>Israeli Army Reservist Major General, former Head of the Israeli National Security Council, and adviser to the Defence Minister</strong>: On 7 October 2023, Giora Eiland, describing the Israeli order to cut off water and electricity to Gaza, wrote in an online journal: “This is what Israel has begun to do — we cut the supply of energy, water and diesel to the Strip . . . But it’s not enough. In order to make the siege effective, we have to prevent others from giving assistance to Gaza . . . The people should be told that they have two choices; to stay and to starve, or to leave. If Egypt and other countries prefer that these people will perish in Gaza, this is their choice.”467 On the same day, he asserted in a national newspaper that “[w]hen you are at war with another country you don't feed them, you don't provide them electricity or gas or water or anything else . . . A country can be attacked in a much broader way, to bring the country to the brink of dysfunction. This is the necessary outcome of events” in Gaza.468 He has repeatedly asserted the benefits for Israel of the creation of a humanitarian crisis in Gaza, stating that “Israel has no interest in the Gaza Strip being rehabilitated and this is an important point that needs to be made clear to the Americans”,469 and that “[i]f we ever want to see the hostages alive, the only way is to create a severe humanitarian crisis in Gaza”.470 He has indicated that water should be targeted, noting that water in Gaza “comes from wells with salt water unfit for consumption. They have water treatment plants, Israel should hit those plants. When the entire world says we have gone insane and this is a humanitarian disaster — we will say, it’s not an end, it’s a means.”471 In a Times radio interview on 12 October 2023, he reiterated the army should:`,
+      `<blockquote class="blockquote">“[C]reate such a huge pressure on Gaza, that Gaza will become an area where people cannot live. People cannot live, until Hamas is destroyed, which means that Israel not only stops to supply energy, diesel, water, food … as we did in the last twenty years … but we should prevent any possible assistance by others, and to create in Gaza such a terrible, unbearable situation, that can last weeks and months”.472</blockquote>`,
       `Giora Eiland has repeatedly been given a media platform to call for Gaza to be made uninhabitable, declaring “the State of Israel has no choice but to make Gaza a place that is temporarily, or permanently, impossible to live in.”473 In an interview on 6 November 2023, he suggested that, “if there is an intention for a military action at Shifa [Hospital], which I think is inescapable, I hope that the head of the CIA got an explanation of why this is necessary, and why the US must ultimately back even an operation like this, even if there are thousands of bodies of civilians in the streets afterward.”474 Further he proposed that “Israel needs to create a humanitarian crisis in Gaza, compelling tens of thousands or even hundreds of thousands to seek refuge in Egypt or the Gulf . . . Gaza will become a place where no human being can exist.”475 Echoing the words of President Herzog, he has repeatedly underscored that there should be no distinction between Hamas combatants and Palestinian civilians, saying:`,
-      `<blockquote>“Who are the ‘poor’ women of Gaza? They are all the mothers, sisters or wives of Hamas murderers. On the one hand, they are part of the infrastructure that supports the organization, and on the other hand, if they experience a humanitarian disaster, then it can be assumed that some of the Hamas fighters and the more junior commanders will begin to understand that the war is futile . . . The international community warns us of a humanitarian disaster in Gaza and of severe epidemics. We must not shy away from this, as difficult as that may be. After all, severe epidemics in the south of the Gaza Strip will bring victory closer . . . It is precisely its civil collapse that will bring the end of the war closer. When senior Israeli figures say in the media ‘It's either us or them’ we should clarify the question of who is ‘them’. ‘They’ are not only Hamas fighters with weapons, but also all the ‘civilian’ officials, including hospital administrators and school administrators, and also the entire Gaza population who enthusiastically supported Hamas and cheered on its atrocities on October 7th.”476</blockquote>`,
+      `<blockquote class="blockquote">“Who are the ‘poor’ women of Gaza? They are all the mothers, sisters or wives of Hamas murderers. On the one hand, they are part of the infrastructure that supports the organization, and on the other hand, if they experience a humanitarian disaster, then it can be assumed that some of the Hamas fighters and the more junior commanders will begin to understand that the war is futile . . . The international community warns us of a humanitarian disaster in Gaza and of severe epidemics. We must not shy away from this, as difficult as that may be. After all, severe epidemics in the south of the Gaza Strip will bring victory closer . . . It is precisely its civil collapse that will bring the end of the war closer. When senior Israeli figures say in the media ‘It's either us or them’ we should clarify the question of who is ‘them’. ‘They’ are not only Hamas fighters with weapons, but also all the ‘civilian’ officials, including hospital administrators and school administrators, and also the entire Gaza population who enthusiastically supported Hamas and cheered on its atrocities on October 7th.”476</blockquote>`,
       "<strong>Israeli Army reservist “motivational speech”</strong>: On 11 October 2023, 95-year old Israeli army reservist Ezra Yachin — a veteran of the Deir Yassin massacre during the 1948 Nakba — reportedly called up for reserve duty to “boost morale” amongst Israeli troops ahead of the ground invasion, was broadcast on social media inciting other soldiers to genocide as follows, while being driven around in an Israeli army vehicle, dressed in Israeli army fatigues:",
       "<strong>Head of the Israeli army’s Air Operations Group</strong>: On 28 October 2023, Lieutenant colonel Gilad Kinan described the Air Force as “work[ing] together with all the bodies in the IDF when the goal is clear — to destroy everything that has been touched by the hand of Hamas”.478",
       "<strong>Commander in the 2908th Battalion of the Israeli army</strong>: In a video posted online on 21 December 2023, Yair Ben David said that the Israeli army had “entered Beit Hanoun and did there as Shimon and Levi did in Nablus,” and that “[t]he entire Gaza should resemble Beit Hanoun”, referring to the city in northern Gaza which has been entirely devastated by the Israeli army..479 The biblical passage in issue reads: “On the third day, when they were in pain, Simeon and Levi, two of Jacob’s sons, brothers of Dinah, took each his sword, came upon the city unmolested, and slew all the males”.480",
@@ -790,7 +790,7 @@ const data = [
     section:
       "D.	Expressions of Genocidal Intent against the Palestinian People by Israeli State Officials and Others",
     page: 105,
-    content: `105.	This genocidal rhetoric of governmental and military officials is also widespread and commonplace amongst non-cabinet members of the Israeli Knesset (‘MKs’) who have repeatedly called for Gaza to be “wiped out”,485 “flatten[ed]”,486 “eras[ed]”,487 and “[c]rush[ed] . . . on all its inhabitants”.488 Parliamentarians have publicly deplored anyone “feel[ing] sorry” for the “uninvolved” Gazans, asserting repeatedly that “there are no uninvolved”,489 that “[t]here are no innocents in Gaza”,490 that “the killers of the women and children should not be separated from the citizens of Gaza”,491 that “the children of Gaza have brought this upon themselves”,492 and that “there should be one sentence for everyone there — death”.493 Parliamentarians have stated “[w]e must not forget that even the ‘innocent citizens’ — the cruel and monstrous people from Gaza took an active part . . . there is no place for any humanitarian gesture — the memory of Amalek must be protested”,494 and that “[w]ithout hunger and thirst among the Gazan population, we will not be able to recruit collaborators”.495 Parliamentarians have also called for “mercilessly” bombing “from the air”,496 calling for the use of nuclear (“doomsday”) weapons,497 and a “Nakba that will overshadow the Nakba of 48”.498`,
+    content: `This genocidal rhetoric of governmental and military officials is also widespread and commonplace amongst non-cabinet members of the Israeli Knesset (‘MKs’) who have repeatedly called for Gaza to be “wiped out”,485 “flatten[ed]”,486 “eras[ed]”,487 and “[c]rush[ed] . . . on all its inhabitants”.488 Parliamentarians have publicly deplored anyone “feel[ing] sorry” for the “uninvolved” Gazans, asserting repeatedly that “there are no uninvolved”,489 that “[t]here are no innocents in Gaza”,490 that “the killers of the women and children should not be separated from the citizens of Gaza”,491 that “the children of Gaza have brought this upon themselves”,492 and that “there should be one sentence for everyone there — death”.493 Parliamentarians have stated “[w]e must not forget that even the ‘innocent citizens’ — the cruel and monstrous people from Gaza took an active part . . . there is no place for any humanitarian gesture — the memory of Amalek must be protested”,494 and that “[w]ithout hunger and thirst among the Gazan population, we will not be able to recruit collaborators”.495 Parliamentarians have also called for “mercilessly” bombing “from the air”,496 calling for the use of nuclear (“doomsday”) weapons,497 and a “Nakba that will overshadow the Nakba of 48”.498`,
   },
   {
     section:
@@ -849,10 +849,10 @@ const data = [
     content: `While reserving the right to revise, supplement or amend this Application, and subject to the presentation to the Court of the relevant evidence and legal arguments, South Africa respectfully requests the Court to adjudge and declare:`,
     subtext: [
       {
-        section: `(1)	that the Republic of South Africa and the State of Israel each have a duty to act in accordance with their obligations under the Convention on the Prevention and Punishment of the Crime of Genocide, in relation to the members of the Palestinian group, to take all reasonable measures within their power to prevent genocide; and`,
+        title: `(1)	that the Republic of South Africa and the State of Israel each have a duty to act in accordance with their obligations under the Convention on the Prevention and Punishment of the Crime of Genocide, in relation to the members of the Palestinian group, to take all reasonable measures within their power to prevent genocide; and`,
       },
       {
-        section: "(2)	that the State of Israel:",
+        title: "(2)	that the State of Israel:",
         content: [
           `(a)	has breached and continues to breach its obligations under the Genocide Convention, in particular the obligations provided under Article I, read in conjunction with Article II, and Articles III (a), III (b), III (c), III (d), III (e), IV, V and VI;`,
           `(b)	must cease forthwith any acts and measures in breach of those obligations, including such acts or measures which would be capable of killing or continuing to kill Palestinians, or causing or continuing to cause serious bodily or mental harm to Palestinians or deliberately inflicting on their group, or continuing to inflict on their group, conditions of life calculated to bring about its physical destruction in whole or in part, and fully respect its obligations under the Genocide Convention, in particular the obligations provided under Articles I, III (a), III (b), III (c), III (d), III (e), IV, V and VI;`,
@@ -879,18 +879,18 @@ const data = [
     page: 114,
     content: `Israel has engaged in and failed to prevent or to punish acts and measures which are genocidal, constituting flagrant violations of Israel’s obligations under Articles I, III (a), III (b), III (c), III (d), III (e), IV, V and VI of the Genocide Convention. As further evidenced in the materials set out in the application, the acts of genocide in question in breach of Articles II (a), II (b), II (c) and II (d), in particular, that collectively target the Palestinians in Gaza include, inter alia:`,
     subtext: [
-      `(1). killing Palestinians in Gaza, including a large proportion of women and children — estimated to account for around 70 per cent of the more than 21,110 fatalities — some of whom appear to have been summarily executed;`,
-      `(2). causing serious mental and bodily harm to Palestinians in Gaza, including through maiming, psychological trauma, and inhuman and degrading treatment;`,
-      `(3). causing the forced evacuation and displacement of around 85 per cent of Palestinians in Gaza — including children, the elderly and infirm, and the sick and wounded
+      `(1). <strong>killing Palestinians in Gaza</strong>, including a large proportion of women and children — estimated to account for around 70 per cent of the more than 21,110 fatalities — some of whom appear to have been summarily executed;`,
+      `(2). <strong>causing serious mental and bodily harm to Palestinians in Gaza</strong>, including through maiming, psychological trauma, and inhuman and degrading treatment;`,
+      `(3). <strong>causing the forced evacuation and displacement of around 85 per cent of Palestinians in Gaza</strong> — including children, the elderly and infirm, and the sick and wounded
         —	as well as causing the large scale destruction of Palestinian homes, villages, refugee camps, towns and entire areas in Gaza, precluding the return of a significant proportion of the Palestinian people to their homes;
         `,
-      `(4). causing widespread hunger, dehydration and starvation to besieged Palestinians in Gaza, through the impeding of sufficient humanitarian assistance, the cutting off of sufficient water, food, fuel and electricity, and the destruction of bakeries, mills, agricultural lands and other methods of production and sustenance;`,
-      `(5). failing to provide and restricting the provision of adequate shelter, clothes, hygiene or sanitation to Palestinians in Gaza, including the 1.9 million internally displaced people, compelled by Israel’s actions to live in dangerous situations of squalor, alongside the routine targeting and destruction of places of shelter and the killing and wounding of those sheltering, including women, children, the disabled and the elderly;`,
-      `(6). failing to provide for or to ensure the provision for the medical needs of Palestinians in Gaza, including those medical needs created by other genocidal acts causing serious bodily harm, including through directly attacking Palestinian hospitals, ambulances and other healthcare facilities in Gaza, killing Palestinian doctors, medics and nurses, including the most qualified medics in Gaza, and destroying and disabling Gaza’s medical system; and`,
-      `(7). destroying Palestinian life in Gaza, through the destruction of Gaza’s universities, schools, courts, public buildings, public records, stores, libraries, churches, mosques, roads, infrastructure, utilities and other facilities necessary to the sustained life of Palestinians in Gaza as a group, alongside the killing of entire family groups — erasing entire oral histories in Gaza
+      `(4). <strong>causing widespread hunger, dehydration and starvation to besieged Palestinians in Gaza</strong>, through the impeding of sufficient humanitarian assistance, the cutting off of sufficient water, food, fuel and electricity, and the destruction of bakeries, mills, agricultural lands and other methods of production and sustenance;`,
+      `(5). <strong>failing to provide and restricting the provision of adequate shelter, clothes, hygiene or sanitation to Palestinians in Gaza</strong>, including the 1.9 million internally displaced people, compelled by Israel’s actions to live in dangerous situations of squalor, alongside the routine targeting and destruction of places of shelter and the killing and wounding of those sheltering, including women, children, the disabled and the elderly;`,
+      `(6). <strong>failing to provide for or to ensure the provision for the medical needs of Palestinians in Gaza</strong>, including those medical needs created by other genocidal acts causing serious bodily harm, including through directly attacking Palestinian hospitals, ambulances and other healthcare facilities in Gaza, killing Palestinian doctors, medics and nurses, including the most qualified medics in Gaza, and destroying and disabling Gaza’s medical system; and`,
+      `(7). <strong>destroying Palestinian life in Gaza</strong>, through the destruction of Gaza’s universities, schools, courts, public buildings, public records, stores, libraries, churches, mosques, roads, infrastructure, utilities and other facilities necessary to the sustained life of Palestinians in Gaza as a group, alongside the killing of entire family groups — erasing entire oral histories in Gaza
         —	and the killing of prominent and distinguished members of society.
         `,
-      `(8). Imposing measures intended to prevent Palestinian births in Gaza, through the reproductive violence inflicted on Palestinian women, newborn babies, infants, and children.`,
+      `(8). <strong>Imposing measures intended to prevent Palestinian births in Gaza</strong>, through the reproductive violence inflicted on Palestinian women, newborn babies, infants, and children.`,
     ],
   },
   {
@@ -1076,73 +1076,94 @@ const data = [
   {
     section: "E.	Provisional Measures Requested",
     page: 144,
-    content: `On the basis of the facts set forth above, South Africa, as a State party to the Convention on the Prevention and Punishment of the Crime of Genocide, respectfully requests the Court, as a matter of extreme urgency, pending the Court’s determination of this case on the merits, to indicate the following provisional measures in relation to the Palestinian people as a group protected by the Genocide Convention. These measures are directly linked to the rights that form the subject matter of South Africa’s dispute with Israel:`,
+    content: [
+      `On the basis of the facts set forth above, South Africa, as a State party to the Convention on the Prevention and Punishment of the Crime of Genocide, respectfully requests the Court, as a matter of extreme urgency, pending the Court’s determination of this case on the merits, to indicate the following provisional measures in relation to the Palestinian people as a group protected by the Genocide Convention. These measures are directly linked to the rights that form the subject matter of South Africa’s dispute with Israel:`,
+    ],
     subtext: [
       {
         section: 1,
-        content: `(1)	The State of Israel shall immediately suspend its military operations in and against Gaza.`,
-        subtext: [],
+        content: [
+          `(1)	The State of Israel shall immediately suspend its military operations in and against Gaza.`,
+        ],
       },
       {
         section: 2,
-        content: `(2)	The State of Israel shall ensure that any military or irregular armed units which may be directed, supported or influenced by it, as well as any organisations and persons which may be subject to its control, direction or influence, take no steps in furtherance of the military operations referred to point (1) above.`,
-        subtext: [],
+        content: [
+          `(2)	The State of Israel shall ensure that any military or irregular armed units which may be directed, supported or influenced by it, as well as any organisations and persons which may be subject to its control, direction or influence, take no steps in furtherance of the military operations referred to point (1) above.`,
+        ],
       },
       {
         section: 3,
-        content: `(3)	The Republic of South Africa and the State of Israel shall each, in accordance with their obligations under the Convention on the Prevention and Punishment of the Crime of Genocide, in relation to the Palestinian people, take all reasonable measures within their power to prevent genocide.`,
-        subtext: [],
+        content: [
+          `(3)	The Republic of South Africa and the State of Israel shall each, in accordance with their obligations under the Convention on the Prevention and Punishment of the Crime of Genocide, in relation to the Palestinian people, take all reasonable measures within their power to prevent genocide.`,
+        ],
       },
       {
         section: 4,
-        content: `(4)	The State of Israel shall, in accordance with its obligations under the Convention on the Prevention and Punishment of the Crime of Genocide, in relation to the Palestinian people as a group protected by the Convention on the Prevention and Punishment of the Crime of Genocide, desist from the commission of any and all acts within the scope of Article II of the Convention, in particular:`,
+        content: [
+          `(4)	The State of Israel shall, in accordance with its obligations under the Convention on the Prevention and Punishment of the Crime of Genocide, in relation to the Palestinian people as a group protected by the Convention on the Prevention and Punishment of the Crime of Genocide, desist from the commission of any and all acts within the scope of Article II of the Convention, in particular:`,
+        ],
         subtext: [
-          `(a)	killing members of the group;`,
-          `(b)	causing serious bodily or mental harm to the members of the group;`,
-          `(c)	deliberately inflicting on the group conditions of life calculated to bring about its physical destruction in whole or in part; and`,
-          `(d)	imposing measures intended to prevent births within the group.`,
+          { content: `(a)	killing members of the group;` },
+          {
+            content: `(b)	causing serious bodily or mental harm to the members of the group;`,
+          },
+          {
+            content: `(c)	deliberately inflicting on the group conditions of life calculated to bring about its physical destruction in whole or in part; and`,
+          },
+          {
+            content: `(d)	imposing measures intended to prevent births within the group.`,
+          },
         ],
       },
       {
         section: 5,
-        content: `(5)	The State of Israel shall, pursuant to point (4)(c) above, in relation to Palestinians, desist from, and take all measures within its power including the rescinding of relevant orders, of restrictions and/or of prohibitions to prevent:`,
+        content: [
+          `(5)	The State of Israel shall, pursuant to point (4)(c) above, in relation to Palestinians, desist from, and take all measures within its power including the rescinding of relevant orders, of restrictions and/or of prohibitions to prevent:`,
+        ],
         subtext: [
           {
             section: "a",
             content: `(a)	the expulsion and forced displacement from their homes;`,
-            subtext: [],
           },
           {
             section: "b",
             content: `(b)	the deprivation of:`,
             subtext: [
-              `(i)	access to adequate food and water;`,
-              `(ii)	access to humanitarian assistance, including access to adequate fuel, shelter, clothes, hygiene and sanitation;`,
-              `(iii)	medical supplies and assistance; and`,
+              `(i) access to adequate food and water;`,
+              `(ii) access to humanitarian assistance, including access to adequate fuel, shelter, clothes, hygiene and sanitation;`,
+              `(iii) medical supplies and assistance; and`,
             ],
           },
           {
             section: "c",
             content: `(c)	the destruction of Palestinian life in Gaza.`,
-            subtext: [],
           },
         ],
       },
       {
         section: 6,
-        content: `(6)	The State of Israel shall, in relation to Palestinians, ensure that its military, as well as any irregular armed units or individuals which may be directed, supported or otherwise influenced by it and any organizations and persons which may be subject to its control, direction or influence, do not commit any acts described in (4) and (5) above, or engage in direct and public incitement to commit genocide, conspiracy to commit genocide, attempt to commit genocide, or complicity in genocide, and insofar as they do engage therein, that steps are taken towards their punishment pursuant to Articles I, II, III and IV of the Convention on the Prevention and Punishment of the Crime of Genocide.`,
+        content: [
+          `(6)	The State of Israel shall, in relation to Palestinians, ensure that its military, as well as any irregular armed units or individuals which may be directed, supported or otherwise influenced by it and any organizations and persons which may be subject to its control, direction or influence, do not commit any acts described in (4) and (5) above, or engage in direct and public incitement to commit genocide, conspiracy to commit genocide, attempt to commit genocide, or complicity in genocide, and insofar as they do engage therein, that steps are taken towards their punishment pursuant to Articles I, II, III and IV of the Convention on the Prevention and Punishment of the Crime of Genocide.`,
+        ],
       },
       {
         section: 7,
-        content: `(7)	The State of Israel shall take effective measures to prevent the destruction and ensure the preservation of evidence related to allegations of acts within the scope of Article II of the Convention on the Prevention and Punishment of the Crime of Genocide; to that end, the State of Israel shall not act to deny or otherwise restrict access by fact-finding missions, international mandates and other bodies to Gaza to assist in ensuring the preservation and retention of said evidence.`,
+        content: [
+          `(7)	The State of Israel shall take effective measures to prevent the destruction and ensure the preservation of evidence related to allegations of acts within the scope of Article II of the Convention on the Prevention and Punishment of the Crime of Genocide; to that end, the State of Israel shall not act to deny or otherwise restrict access by fact-finding missions, international mandates and other bodies to Gaza to assist in ensuring the preservation and retention of said evidence.`,
+        ],
       },
       {
         section: 8,
-        content: `(8)	The State of Israel shall submit a report to the Court on all measures taken to give effect to this Order within one week, as from the date of this Order, and thereafter at such regular intervals as the Court shall order, until a final decision on the case is rendered by the Court.`,
+        content: [
+          `(8)	The State of Israel shall submit a report to the Court on all measures taken to give effect to this Order within one week, as from the date of this Order, and thereafter at such regular intervals as the Court shall order, until a final decision on the case is rendered by the Court.`,
+        ],
       },
       {
         section: 9,
-        content: `(9)	The State of Israel shall refrain from any action and shall ensure that no action is taken which might aggravate or extend the dispute before the Court or make it more difficult to resolve.`,
+        content: [
+          `(9)	The State of Israel shall refrain from any action and shall ensure that no action is taken which might aggravate or extend the dispute before the Court or make it more difficult to resolve.`,
+        ],
       },
     ],
   },

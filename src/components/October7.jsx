@@ -2,7 +2,7 @@ import data from "../data";
 import Navigation from "./Navigation";
 import LocalRoutes from "./LocalRoutes";
 export default function October7() {
-  const pages = data.slice(101, 109);
+  const pages = data.slice(40, 43);
   console.log(pages);
   return (
     <>
