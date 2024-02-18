@@ -1,8 +1,9 @@
 import parse from "html-react-parser";
 export default function Card({ data }) {
+  console.log(data);
   return (
     <div class="card">
-      {Object.keys(data).length && (
+      {data && Object.keys(data).length && (
         <div class="card-body">
           <p>{data.page}</p>
           <p>{data.content}</p>

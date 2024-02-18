@@ -1,6 +1,7 @@
 import { useState } from "preact/hooks";
 import { Routes, Route, Link } from "react-router-dom";
 import Navigation from "./Navigation";
+import LocalRoutes from "./LocalRoutes";
 import data from "../data";
 import Card from "./Card";
 export default function Search() {
@@ -8,7 +9,6 @@ export default function Search() {
   const [filtered, setFiltered] = useState([]);
 
   const handleChange = (e) => {
-    console.log(e.target.value);
     setFormData(e.target.value);
   };
 
@@ -16,32 +16,15 @@ export default function Search() {
     e.preventDefault();
     if (!formData || formData.length < 4) return;
     const filteredData = data.filter((section) => {
-      return section.content.toLowerCase().includes(formData.toLowerCase());
+      if (typeof section.content === "string") {
+        return section.content.toLowerCase().includes(formData.toLowerCase());
+      }
+      return section.content[0].toLowerCase().includes(formData.toLowerCase());
     });
-    console.log(filtered);
+    console.log(filteredData);
     setFiltered(filteredData);
   };
-
-  const localRoutes = filtered.map(({ page }) => (
-    <Route
-      key={page}
-      path={`/${page}`}
-      element={<Card data={filtered[page - 1]} />}
-    />
-  ));
-  console.log(filtered.length);
-  const navigation = filtered.map(({ page }) => (
-    <li
-      class="page-item"
-      //   class={`page-item ${activeLink === page ? "active" : ""}`}
-      //   onClick={() => setActiveLink(page)}
-    >
-      <Link class="page-link" to={`${page}`}>
-        {page}
-      </Link>
-    </li>
-  ));
-
+  console.log(filtered);
   return (
     <>
       <h1>Search</h1>
@@ -55,16 +38,8 @@ export default function Search() {
         />
         <button type="submit">Search</button>
       </form>
-      {/* <Navigation pages={filtered} /> */}
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">{navigation}</ul>
-      </nav>
-      <div>
-        {filtered.map((section) => (
-          <Card data={section} />
-        ))}
-      </div>
-      <Routes>{localRoutes}</Routes>
+      <Navigation pages={filtered} />
+      <LocalRoutes pages={filtered} />
     </>
   );
 }
