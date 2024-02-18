@@ -69,3 +69,5 @@ index route
 
 design example
 https://uscpr.org/take-action/
+
+https://israel-genocide.vercel.ap

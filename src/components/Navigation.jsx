@@ -4,7 +4,7 @@ export default function Navigation({ pages }) {
   const [activeLink, setActiveLink] = useState("");
   return (
     <>
-      <ul class="pagination">
+      <ul class="pagination" style="display:flex; flex-wrap: wrap">
         {pages.map(({ page }) => (
           <li
             class={`page-item ${activeLink === page ? "active" : ""}`}
