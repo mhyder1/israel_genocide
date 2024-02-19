@@ -15,18 +15,15 @@ import { getData } from "./utils/getData";
 
 export function App() {
   return (
-    <div class="container">
+    <div class="container-fluid">
       {/* <h1>ICJ</h1> */}
-      {/* <NavBar /> */}
+      <NavBar />
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/introduction/*" element={<Page data={getData(1, 8)} />} />
-        <Route
-          path="/jurisdiction/*"
-          element={<Page data={getData(9, 18)} />}
-        />
-        <Route path="/facts/*" element={<Facts />}>
+        <Route path="introduction/*" element={<Page data={getData(1, 8)} />} />
+        <Route path="jurisdiction/*" element={<Page data={getData(9, 18)} />} />
+        <Route path="facts/*" element={<Facts />}>
           <Route
             path="introduction/*"
             element={<Page data={getData(18, 21)} />}
