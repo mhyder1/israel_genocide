@@ -1,7 +1,7 @@
 import parse from "html-react-parser";
 import Highlighter from "react-highlight-words";
 export default function Card({ data, searchWord }) {
-  const TextDispaly = ({ content }) => (
+  const TextDisplay = ({ content }) => (
     <Highlighter searchWords={[searchWord]} textToHighlight={content} />
   );
   return (
@@ -10,14 +10,15 @@ export default function Card({ data, searchWord }) {
         <div class="card-body">
           <p>{data.page}</p>
           <p>
-            <TextDispaly content={data.content} />
+            <TextDisplay content={data.content} />
           </p>
           {data.subtext && (
             <ul class="list-group">
               {data.subtext.map((text) =>
                 typeof text === "string" ? (
                   <li class="list-group-item">
-                    <TextDispaly content={parse(text)} />
+                    <TextDisplay content={text} />{" "}
+                    {/** parse needs to be fixed, doesnt work with hilight */}
                   </li>
                 ) : (
                   <>
@@ -26,7 +27,7 @@ export default function Card({ data, searchWord }) {
                       <ul class="title-group">
                         {text.content.map((txt) => (
                           <li class="list-group-item">
-                            <TextDispaly content={txt} />
+                            <TextDisplay content={txt} />
                           </li>
                         ))}
                       </ul>
@@ -35,7 +36,7 @@ export default function Card({ data, searchWord }) {
                       <ul class="title-group">
                         {text.subtext.map((item) => (
                           <li class="list-group-item">
-                            <TextDispaly content={item.content} />
+                            <TextDisplay content={item.content} />
                           </li>
                         ))}
                       </ul>

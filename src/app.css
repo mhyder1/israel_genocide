@@ -1,25 +1,14 @@
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.page-range {
+  font-style: italic;
+  color: lightslategray;
+  font-weight: bold;
+  font-size: 10px;
+  margin-left: 5px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.preact:hover {
-  filter: drop-shadow(0 0 2em #673ab8aa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.navigation li a:link,
+.navigation li a:visited,
+.navigation li a:hover,
+.navigation li a:active {
+  color: #585858;
 }

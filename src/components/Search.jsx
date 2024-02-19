@@ -1,9 +1,8 @@
-import { useState, useRef } from "preact/hooks";
-import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { useState } from "preact/hooks";
+import { useNavigate } from "react-router-dom";
 import Navigation from "./Navigation";
 import LocalRoutes from "./LocalRoutes";
 import data from "../data";
-import Card from "./Card";
 export default function Search() {
   const [formData, setFormData] = useState("");
   const [filtered, setFiltered] = useState([]);
@@ -22,10 +21,10 @@ export default function Search() {
       }
       return section.content[0].toLowerCase().includes(formData.toLowerCase());
     });
-    console.log(filteredData);
+
     setFiltered(filteredData);
   };
-  console.log(filtered);
+
   const reset = () => {
     setFiltered([]);
     setFormData("");

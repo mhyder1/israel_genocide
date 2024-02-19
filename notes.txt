@@ -70,4 +70,11 @@ index route
 design example
 https://uscpr.org/take-action/
 
-https://israel-genocide.vercel.ap
+mega menu
+https://www.solodev.com/blog/web-design/how-to-add-a-mega-menu-to-your-website.stml
+
+https://blog.logrocket.com/developing-responsive-mega-menu-react/
+
+
+
+https://israel-genocide.vercel.app
