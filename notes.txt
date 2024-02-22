@@ -78,3 +78,28 @@ https://blog.logrocket.com/developing-responsive-mega-menu-react/
 
 
 https://israel-genocide.vercel.app
+
+
+https://getbootstrap.com/docs/4.0/examples/album/#
+
+https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/#
+
+https://getbootstrap.com/docs/4.0/examples/jumbotron/
+
+https://getbootstrap.com/docs/4.0/examples/offcanvas/#
+
+background gradient
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(15,25,20,1) 0%, rgba(4,108,44,1) 100%);
+
+background: rgb(255,255,255);
+background: linear-gradient(139deg, rgba(255,255,255,1) 0%, rgba(15,25,20,1) 0%, rgba(4,108,44,1) 100%);
+
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=101a15&c2=056c2d&gt=r&gd=dtl
+*/
+background: rgba(16, 26, 21, 1.0);
+background: radial-gradient(at left top, rgba(16, 26, 21, 1.0), rgba(5, 108, 45, 1.0));
+
+Better understand the International Court of Justice Crime of Genocide in the Gaza Strip

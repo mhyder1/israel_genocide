@@ -11,14 +11,18 @@ import Request from "./components/Request";
 import Page from "./components/Page";
 import NavBar from "./components/NavBar";
 import Nav from "./components/Nav";
+import Crumbs from "./components/Crumbs";
+import SideBar from "./components/SideBar";
 import { getData } from "./utils/getData";
 
 export function App() {
   return (
-    <div class="container-fluid">
+    <div class="container-fluid" style={{ display: "flex" }}>
       {/* <h1>ICJ</h1> */}
-      <NavBar />
+      {/* <NavBar />
       <Nav />
+      <Crumbs /> */}
+      <SideBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="introduction/*" element={<Page data={getData(1, 8)} />} />

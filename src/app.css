@@ -12,3 +12,25 @@
 .navigation li a:active {
   color: #585858;
 }
+
+.home-background {
+  background: rgba(16, 26, 21, 1);
+  background: radial-gradient(
+    at left top,
+    rgba(16, 26, 21, 1),
+    /* rgba(5, 108, 45, 1) */ rgba(0, 195, 76, 1)
+  );
+  height: 100vh;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  /* margin-left: 100px; */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+}
+/* rgba(0, 195, 76, 1) */
+/* rgba(5, 108, 45, 1) */
+
+.side-bar {
+  width: 200px;
+}

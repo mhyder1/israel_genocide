@@ -10,7 +10,6 @@ export default function FactBackground() {
   }, [match]);
   return (
     <>
-      <h1>The facts / Background</h1>
       <Outlet />
     </>
   );
