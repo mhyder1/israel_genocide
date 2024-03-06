@@ -1,16 +1,19 @@
 .page-range {
   font-style: italic;
-  color: lightslategray;
+  color: white;
   font-weight: bold;
   font-size: 10px;
   margin-left: 5px;
+  background-color: black;
+  border-radius: 3px;
 }
 
 .navigation li a:link,
 .navigation li a:visited,
 .navigation li a:hover,
-.navigation li a:active {
-  color: #585858;
+.navigation li a:active,
+.search-link {
+  color: white;
 }
 
 .side-bar {

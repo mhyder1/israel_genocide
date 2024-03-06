@@ -8,7 +8,7 @@ export default function Request() {
   const urlMatch = /^\d{3}$/.test(isMatch);
   return (
     <>
-      <h1>Request for provisional measures</h1>
+      {/* <h1>Request for provisional measures</h1> */}
       {!isMatch || urlMatch ? <Page data={getData(112, 117)} /> : <Outlet />}
     </>
   );

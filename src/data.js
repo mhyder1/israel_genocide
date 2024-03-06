@@ -1076,9 +1076,8 @@ const data = [
   {
     section: "E.	Provisional Measures Requested",
     page: 144,
-    content: [
+    content: 
       `On the basis of the facts set forth above, South Africa, as a State party to the Convention on the Prevention and Punishment of the Crime of Genocide, respectfully requests the Court, as a matter of extreme urgency, pending the Court’s determination of this case on the merits, to indicate the following provisional measures in relation to the Palestinian people as a group protected by the Genocide Convention. These measures are directly linked to the rights that form the subject matter of South Africa’s dispute with Israel:`,
-    ],
     subtext: [
       {
         section: 1,

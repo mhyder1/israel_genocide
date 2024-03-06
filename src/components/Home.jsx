@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Nav from "./Nav";
 
 export default function Home() {
   const style = {
@@ -6,11 +7,12 @@ export default function Home() {
   };
   return (
     <div class="home">
-      <h1>
+      {/* <h1>
         Better understand the International Court of Justice Crime of Genocide
         in the Gaza Strip
-      </h1>
-      <section class="button-menu">
+      </h1> */}
+      <Nav />
+      {/* <section class="button-menu">
         <Link to="/introduction">
           <button type="button" class="btn btn-secondary btn-lg">
             Introduction
@@ -40,8 +42,8 @@ export default function Home() {
           <button type="button" class="btn btn-secondary btn-lg">
             Search
           </button>
-        </Link>
-      </section>
+        </Link> 
+      </section>*/}
       {/* <h3>APPLICATION INSTITUTING PROCEEDINGS</h3>
       <p>
         To the Registrar of the International Court of Justice, the undersigned,
