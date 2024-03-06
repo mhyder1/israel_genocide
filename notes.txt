@@ -103,3 +103,11 @@ background: rgba(16, 26, 21, 1.0);
 background: radial-gradient(at left top, rgba(16, 26, 21, 1.0), rgba(5, 108, 45, 1.0));
 
 Better understand the International Court of Justice Crime of Genocide in the Gaza Strip
+
+
+
+card class
+height: 90vh;
+    overflow: auto;
+    width: 96%;
+    margin: 10px auto;

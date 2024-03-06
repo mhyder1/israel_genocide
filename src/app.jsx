@@ -20,8 +20,8 @@ export function App() {
     <div class="container-fluid" style={{ display: "flex" }}>
       {/* <h1>ICJ</h1> */}
       {/* <NavBar />
-      <Nav />
-      <Crumbs /> */}
+      <Nav /> */}
+      {/* <Crumbs /> */}
       <SideBar />
       <Routes>
         <Route path="/" element={<Home />} />

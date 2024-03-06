@@ -38,7 +38,7 @@ export default function Crumbs() {
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           {crumbs.map((crumb, index) => (
-            <li class="breadcrumb-item">
+            <li class="breadcrumb-item" style={{ color: "white" }}>
               {index < crumbs.length - 1 ? (
                 <Link to={crumb}>{linkMap[crumb]}</Link>
               ) : (

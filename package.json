@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@babel/plugin-transform-react-jsx-source": "^7.23.3",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.11",
     "bootstrap": "^5.3.2",
     "html-react-parser": "^5.1.1",
     "preact": "^10.19.3",

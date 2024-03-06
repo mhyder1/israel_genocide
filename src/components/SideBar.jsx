@@ -1,5 +1,6 @@
 import wikipedia from "../assets/wikipedia.png";
 import icj from "../assets/icj.svg";
+import { Link } from "react-router-dom";
 export default function SideBar() {
   return (
     <div
@@ -11,34 +12,37 @@ export default function SideBar() {
         padding: "10px 0",
       }}
     >
-      <div style={{ width: "50px", cursor: "pointer" }}>
-        <hr
-          style={{
-            backgroundColor: "black",
-            height: "5px",
-            border: "0",
-            opacity: "100",
-          }}
-        />
-        <hr
-          style={{
-            backgroundColor: "red",
-            height: "5px",
-            border: "0",
-            opacity: "100",
-            width: "70%",
-          }}
-        />
-        <hr
-          style={{
-            backgroundColor: "green",
-            height: "5px",
-            border: "0",
-            opacity: "100",
-            width: "85%",
-          }}
-        />
-      </div>
+      <Link to="/">
+        <div style={{ width: "50px", cursor: "pointer" }}>
+          <hr
+            style={{
+              backgroundColor: "black",
+              height: "5px",
+              border: "0",
+              opacity: "100",
+            }}
+          />
+          <hr
+            style={{
+              backgroundColor: "red",
+              height: "5px",
+              border: "0",
+              opacity: "100",
+              width: "70%",
+            }}
+          />
+          <hr
+            style={{
+              backgroundColor: "green",
+              height: "5px",
+              border: "0",
+              opacity: "100",
+              width: "85%",
+            }}
+          />
+        </div>
+      </Link>
+
       <div
         style={{
           display: "flex",

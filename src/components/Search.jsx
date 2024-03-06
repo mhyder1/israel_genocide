@@ -31,21 +31,31 @@ export default function Search() {
     navigate("/search");
   };
   return (
-    <>
-      <h1>Search</h1>
-      <form onSubmit={handleSubmit}>
+    <section class="page">
+      {/* <h1>Search</h1> */}
+      <form onSubmit={handleSubmit} style={{ display: "flex" }}>
         <input
+          className="form-control form-control-sm"
           type="text"
           placeholder="search"
           name="search"
           value={formData}
           onChange={handleChange}
         />
-        <button type="submit">Search</button>
-        <button onClick={reset}>Clear</button>
+        <button className="btn btn-sm" type="submit">Search</button>
+        <button className="btn btn-sm" onClick={reset}>Clear</button>
+        {/* <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-sm-primary" type="button">
+            Search
+          </button>
+          <button class="btn btn-sm-primary" type="button">
+            Reset
+          </button>
+        </div> */}
       </form>
-      <Navigation pages={filtered} />
+
       <LocalRoutes pages={filtered} searchWord={formData} />
-    </>
+      <Navigation pages={filtered} />
+    </section>
   );
 }
