@@ -79,6 +79,10 @@
     margin: 10px auto;
 }
 
+.p-megamenu	{
+  background-color: white;
+}
+
 /* 
 give .card a width start with 100vw, then add some padding maybe, give it a width with overflow
 .page needs a width

@@ -1,10 +1,34 @@
 import parse from "html-react-parser";
 import Highlighter from "react-highlight-words";
+import renderToString from "preact-render-to-string";
 import TopNav from "./TopNav";
 export default function Card({ data, searchWord }) {
-  const TextDisplay = ({ content }) => (
-    <Highlighter searchWords={[searchWord]} textToHighlight={content} />
-  );
+
+  const HighlightedText = ({ text, wordsToHighlight }) => {
+    //find html tags and their contents
+    const parts = text.split(/(<[^>]+>[^<]*<\/[^>]+>|<[^>]+>|[^<]+)/g);
+    return (
+      <span>
+        {parts.map((part, index) =>
+          part.startsWith("<") ? (
+            parse(part)
+          ) : (
+            <Highlighter
+              key={index}
+              searchWords={wordsToHighlight}
+              autoEscape={true}
+              textToHighlight={part}
+            />
+          )
+        )}
+      </span>
+    );
+  };
+  const TextDisplay = ({ content }) => {
+    const jsx = parse(content);
+    const plainText = renderToString(jsx);
+    return <HighlightedText text={plainText} wordsToHighlight={[searchWord]} />;
+  };
   return (
     <>
       {/* <TopNav /> */}
@@ -21,7 +45,6 @@ export default function Card({ data, searchWord }) {
                   typeof text === "string" ? (
                     <li class="list-group-item">
                       <TextDisplay content={text} />{" "}
-                      {/** parse needs to be fixed, doesnt work with hilight */}
                     </li>
                   ) : (
                     <>
@@ -50,7 +73,18 @@ export default function Card({ data, searchWord }) {
               </ul>
             )}
           </div>
-        ) : (<p style={{display: "flex", justifyContent: 'center', alignItems: 'center', height: '100%'}}>Search for a term in the ICJ document</p>)}
+        ) : (
+          <p
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100%",
+            }}
+          >
+            Search for a term in the ICJ document
+          </p>
+        )}
       </div>
     </>
   );
