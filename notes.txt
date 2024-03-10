@@ -42,6 +42,11 @@ Done:
 
 8 December 2023  fix, 108 (embed html)
 
+text search:
+data.content // top level is string - most are like this
+subtext.content // array loop over and compare
+subtext.content.subtext.content   section 144 nested lists
+
 additional measures
 https://www.reddit.com/r/law/comments/1aq1wen/on_12_february_2024_south_africa_submitted_an/
 

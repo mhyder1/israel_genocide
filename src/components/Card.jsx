@@ -1,9 +1,11 @@
 import parse from "html-react-parser";
 import Highlighter from "react-highlight-words";
 import renderToString from "preact-render-to-string";
+import { useMatch } from "react-router-dom";
 import TopNav from "./TopNav";
 export default function Card({ data, searchWord }) {
-
+  const match = useMatch("search/*");
+  const showMenu = match?.pathname !== "/search"
   const HighlightedText = ({ text, wordsToHighlight }) => {
     //find html tags and their contents
     const parts = text.split(/(<[^>]+>[^<]*<\/[^>]+>|<[^>]+>|[^<]+)/g);
@@ -31,7 +33,7 @@ export default function Card({ data, searchWord }) {
   };
   return (
     <>
-      {/* <TopNav /> */}
+      {showMenu && <TopNav />}
       <div class="card page-card">
         {data?.content ? (
           <div class="card-body">

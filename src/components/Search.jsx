@@ -4,22 +4,28 @@ import Navigation from "./Navigation";
 import LocalRoutes from "./LocalRoutes";
 import data from "../data";
 export default function Search() {
-  const [formData, setFormData] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
   const [filtered, setFiltered] = useState([]);
   const navigate = useNavigate();
-
   const handleChange = (e) => {
-    setFormData(e.target.value);
+    setSearchTerm(e.target.value);
   };
+
+  function searchWord(text, word) {
+    const regex = new RegExp(`\\b${word}\\b`, "gi");
+    return regex.test(text);
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!formData || formData.length < 4) return;
+    if (!searchTerm || searchTerm.length < 4) return;
+    // also need to to search texts that not only in the content
     const filteredData = data.filter((section) => {
-      if (typeof section.content === "string") {
-        return section.content.toLowerCase().includes(formData.toLowerCase());
-      }
-      return section.content[0].toLowerCase().includes(formData.toLowerCase());
+      // if (typeof section.content === "string") {
+      //   return section.content.toLowerCase().includes(searchTerm.toLowerCase());
+      // }
+      // return section.content[0].toLowerCase().includes(searchTerm.toLowerCase());
+      return searchWord(section.content, searchTerm) || section?.subtext?.some(text => searchWord(text, searchTerm))
     });
 
     setFiltered(filteredData);
@@ -27,7 +33,7 @@ export default function Search() {
 
   const reset = () => {
     setFiltered([]);
-    setFormData("");
+    setSearchTerm("");
     navigate("/search");
   };
   return (
@@ -39,11 +45,15 @@ export default function Search() {
           type="text"
           placeholder="search"
           name="search"
-          value={formData}
+          value={searchTerm}
           onChange={handleChange}
         />
-        <button className="btn btn-sm" type="submit">Search</button>
-        <button className="btn btn-sm" onClick={reset}>Clear</button>
+        <button className="btn btn-sm" type="submit">
+          Search
+        </button>
+        <button className="btn btn-sm" onClick={reset}>
+          Clear
+        </button>
         {/* <div class="d-grid gap-2 d-md-block">
           <button class="btn btn-sm-primary" type="button">
             Search
@@ -54,7 +64,7 @@ export default function Search() {
         </div> */}
       </form>
 
-      <LocalRoutes pages={filtered} searchWord={formData} />
+      <LocalRoutes pages={filtered} searchWord={searchTerm} />
       <Navigation pages={filtered} />
     </section>
   );
