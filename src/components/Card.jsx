@@ -5,7 +5,9 @@ import { useMatch } from "react-router-dom";
 import TopNav from "./TopNav";
 export default function Card({ data, searchWord }) {
   const match = useMatch("search/*");
-  const showMenu = match?.pathname !== "/search"
+  const showMenu = match?.pathnameBase !== "/search"
+  console.log(match)
+  console.log
   const HighlightedText = ({ text, wordsToHighlight }) => {
     //find html tags and their contents
     const parts = text.split(/(<[^>]+>[^<]*<\/[^>]+>|<[^>]+>|[^<]+)/g);

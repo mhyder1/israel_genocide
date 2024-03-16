@@ -55,7 +55,7 @@ export default function Navigation({ pages }) {
             );
           }
 
-          return <li key={index}>{children}</li>;
+          return !!pages.length && <li key={index}>{children}</li>;
         })}
       </ul>
       {/* <span>next {'>>'}</span> */}
