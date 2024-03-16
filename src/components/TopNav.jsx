@@ -168,21 +168,21 @@ export default function TopNav() {
           <div className="menu">
             <h4>The Claims Of South Africa</h4>
             <p>Section 110</p>
-            <p>Claims stuff</p>
+            <p>South Africa's claim that Israel is committing genocide</p>
           </div>
         </li>
         <li>
-          <Link
+          <NavLink
             to="/relief"
             className={({ isActive }) => (isActive ? "menu-active" : "")}
           >
             V. Relief
-          </Link>
+          </NavLink>
           <div className="menu">
             <h4>The Relief Sought</h4>
             <p>Section 111</p>
             <p>
-              Basic outline of the genocide case by South Africa against Israel
+              What Israel must do to satisfy the case against it
             </p>
           </div>
         </li>
