@@ -26,6 +26,58 @@ export default function Card({ data, searchWord }) {
       </span>
     );
   };
+
+  // const HighlightedText = ({ text, wordsToHighlight }) => {
+  //   // Split the text into parts while preserving HTML tags
+  //   const parts = text.split(/(<[^>]+>[^<]*<\/[^>]+>|<[^>]+>|[^<]+)/g);
+  //   return (
+  //     <span>
+  //       {parts.map((part, index) => {
+  //         if (part.startsWith('<')) {
+  //           // Render HTML tags
+  //           console.log(part)
+  //           return <span dangerouslySetInnerHTML={{ __html: part }} />;
+  //         } else {
+  //           // Split text content by highlighting words
+  //           return part
+  //             .split(new RegExp(`(${wordsToHighlight.join('|')})`, 'gi'))
+  //             .map((wordPart, i) => {
+  //               const word = wordsToHighlight.find(
+  //                 w => wordPart.toLowerCase() === w.toLowerCase()
+  //               );
+  //               if (word) {
+  //                 // Highlight matched words
+  //                 if (wordPart.toLowerCase() === 'html') {
+  //                   return (
+  //                     <strong key={i} style={{ backgroundColor: 'yellow' }}>
+  //                       {wordPart}
+  //                     </strong>
+  //                   );
+  //                 } else if (wordPart.toLowerCase() === 'text') {
+  //                   return (
+  //                     <em key={i} style={{ backgroundColor: 'yellow' }}>
+  //                       {wordPart}
+  //                     </em>
+  //                   );
+  //                 } else {
+  //                   return (
+  //                     <span key={i} style={{ backgroundColor: 'yellow' }}>
+  //                       {wordPart}
+  //                     </span>
+  //                   );
+  //                 }
+  //               } else {
+  //                 return <span key={i}>{wordPart}</span>;
+  //               }
+  //             });
+  //         }
+  //       })}
+  //     </span>
+  //   );
+  // };
+
+
+
   const TextDisplay = ({ content }) => {
     const jsx = parse(content);
     const plainText = renderToString(jsx);

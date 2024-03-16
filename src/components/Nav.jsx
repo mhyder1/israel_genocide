@@ -16,6 +16,7 @@ export default function Nav() {
           <Link to="/jurisdiction">Jurisdiction of the court</Link>
           <em class="page-range">(8 - 17)</em>
         </li>
+
         <li type="I">
           <Link to="/facts">The facts</Link>
           <ul>
@@ -120,6 +121,7 @@ export default function Nav() {
             </li>
           </ul>
         </li>
+        
         <li type="I">
           <Link to="/claims">The claims of South Africa</Link>
           <em class="page-range">(110)</em>

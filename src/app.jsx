@@ -17,7 +17,7 @@ import { getData } from "./utils/getData";
 
 export function App() {
   return (
-    <div class="container-fluid" style={{ display: "flex" }}>
+    <div class="container-fluid" style={{ display: "flex", padding: "0"}}>
       {/* <h1>ICJ</h1> */}
       {/* <NavBar />
       <Nav /> */}
@@ -25,9 +25,10 @@ export function App() {
       <SideBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="introduction/*" element={<Page data={getData(1, 8)} />} />
+        <Route path="introduction/*" element={<Page data={getData(1, 9)} />} />
         <Route path="jurisdiction/*" element={<Page data={getData(9, 18)} />} />
         <Route path="facts/*" element={<Facts />}>
+        {/* <Route path="facts/*" element={<Page data={getData(18, 21)} />}> */}
           <Route
             path="introduction/*"
             element={<Page data={getData(18, 21)} />}
@@ -42,6 +43,7 @@ export function App() {
               path="october_7/*"
               element={<Page data={getData(40, 43)} />}
             />
+            <Route path="*" element={<NotFound />} />
           </Route>
           <Route path="genocidal_acts/*" element={<FactGenocidalActs />}>
             <Route path="killing/*" element={<Page data={getData(45, 51)} />} />
