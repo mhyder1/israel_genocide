@@ -36,6 +36,22 @@ export default function Home() {
           </button>
         </Link>
       </section>
+      <h1>Test</h1>
+      <video controls preload="metadata">
+        <source
+          src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4"
+          type="video/mp4"
+        />
+        Video not supported.
+      </video>
+      <h1>Current</h1>
+      <div className="content">
+        <video
+          src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4"
+          controls
+          playsInline
+        />
+      </div>
     </div>
   );
 }
