@@ -36,7 +36,7 @@ export default function Home() {
           </button>
         </Link>
       </section>
-      <h1>Test</h1>
+      {/* <h1>Test</h1>
       <video controls preload="metadata">
         <source
           src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4"
@@ -51,7 +51,7 @@ export default function Home() {
           controls
           playsInline
         />
-      </div>
+      </div> */}
     </div>
   );
 }

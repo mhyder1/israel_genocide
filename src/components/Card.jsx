@@ -1,7 +1,7 @@
 import parse from "html-react-parser";
 import Highlighter from "react-highlight-words";
 import renderToString from "preact-render-to-string";
-import { references } from "../../references";
+import { references } from "../../refs";
 import { useMatch } from "react-router-dom";
 import TopNav from "./TopNav";
 export default function Card({ data, searchWord }) {
