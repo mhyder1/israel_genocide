@@ -3,7 +3,7 @@ import Page from "./Page";
 import { getData } from "../utils/getData";
 export default function Request() {
   const match = useMatch("request/*");
-  console.log(match);
+  // console.log(match);
   const isMatch = match.params["*"];
   const urlMatch = /^\d{3}$/.test(isMatch);
   return (

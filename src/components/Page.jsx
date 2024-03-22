@@ -2,7 +2,7 @@ import Navigation from "./Navigation";
 import LocalRoutes from "./LocalRoutes";
 import Crumbs from "./Crumbs";
 export default function Page({ data }) {
-  console.log(data);
+  // console.log(data);
   return (
     <section
       class="page"

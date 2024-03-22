@@ -4,14 +4,15 @@ import renderToString from "preact-render-to-string";
 import { references } from "../../refs";
 import { useMatch } from "react-router-dom";
 import TopNav from "./TopNav";
+import Crumbs from "./Crumbs";
 export default function Card({ data, searchWord }) {
   const match = useMatch("search/*");
   const showMenu = match?.pathnameBase !== "/search";
-  console.log(match);
-  console.log;
+
   const HighlightedText = ({ text, wordsToHighlight }) => {
     //find html tags and their contents
-    const parts = text.split(/(<[^>]+>[^<]*<\/[^>]+>|<[^>]+>|[^<]+)/g);
+    const parts = text.split(/(<strong>.*?<\/strong>) |(<sup class="reference">.*?<\/sup>)/g).filter(Boolean);
+
     return (
       <span>
         {parts.map((part, index) =>
@@ -87,12 +88,13 @@ export default function Card({ data, searchWord }) {
       if(url.endsWith('.') || url.endsWith(';')) {
         url = url.slice(0, -1);
       }
-      return '<a href="' + url + '" target="_blank">' + url + "</a>";
+      // return '<a href="' + url + '" target="_blank">' + url + "</a>";
+      return `<a href="${url}" target="_blank">${url}</a>`;
     });
   }
 
   function replacer(match, number) {
-    console.log(number);
+    // console.log(number);
     if (number in references) {
       const tooltip = convertToHyperlinks(references[number]);
       return `<sup class="reference">${number}<span class="hidden">${tooltip}</span></sup>`; // <span class="hidden">${references[number]}</span>
@@ -113,15 +115,15 @@ export default function Card({ data, searchWord }) {
     //-------------------------------------
     const jsx = parse(newContent);
     // const jsx = parse(content);
-    return jsx;
+    // return jsx;
 
 
-    // const plainText = renderToString(jsx);
-    // return <HighlightedText text={plainText} wordsToHighlight={[searchWord]} />;
+    const plainText = renderToString(jsx);
+    return <HighlightedText text={plainText} wordsToHighlight={[searchWord]} />;
 
-    //   return <Highlighter
-    //   searchWords={[searchWord]}
-    //   textToHighlight={content}
+      // return <Highlighter
+      // searchWords={[searchWord]}
+      // textToHighlight={plainText}
     // />
   };
   return (
@@ -131,6 +133,7 @@ export default function Card({ data, searchWord }) {
         {data?.content ? (
           <div class="card-body">
             <p>{data.page}</p>
+            {/* <Crumbs /> */}
             <p>
               <TextDisplay content={data.content} />
             </p>
