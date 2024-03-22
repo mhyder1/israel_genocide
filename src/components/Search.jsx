@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Navigation from "./Navigation";
 import LocalRoutes from "./LocalRoutes";
 import data from "../data";
+
 export default function Search() {
   const [searchTerm, setSearchTerm] = useState("");
   const [filtered, setFiltered] = useState([]);
@@ -39,7 +40,7 @@ export default function Search() {
   return (
     <section class="page">
       {/* <h1>Search</h1> */}
-      <form onSubmit={handleSubmit} style={{ display: "flex" }}>
+      <form onSubmit={handleSubmit} className="form">
         <input
           className="form-control form-control-sm"
           type="text"

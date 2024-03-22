@@ -114,6 +114,8 @@ export default function Card({ data, searchWord }) {
     const jsx = parse(newContent);
     // const jsx = parse(content);
     return jsx;
+
+
     // const plainText = renderToString(jsx);
     // return <HighlightedText text={plainText} wordsToHighlight={[searchWord]} />;
 
