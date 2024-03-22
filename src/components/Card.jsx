@@ -11,10 +11,10 @@ export default function Card({ data, searchWord }) {
 
   const HighlightedText = ({ text, wordsToHighlight }) => {
     //find html tags and their contents
-    const parts = text.split(/(<strong>.*?<\/strong>) |(<sup class="reference">.*?<\/sup>)/g).filter(Boolean);
+    const parts = text.split(/(<strong>.*?<\/strong>)|(<sup class="reference">.*?<\/sup>)/g).filter(Boolean);
 
     return (
-      <span>
+      <span id="test">
         {parts.map((part, index) =>
           part.startsWith("<") ? (
             parse(part)
