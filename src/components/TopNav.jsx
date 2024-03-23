@@ -1,4 +1,6 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faSearch, faBaby, faBan } from "@fortawesome/free-solid-svg-icons";
 export default function TopNav() {
   const location = useLocation();
   return (
@@ -57,6 +59,8 @@ export default function TopNav() {
                 <div className="menu-section">
                   <h4>Let's Get Started</h4>
                   <div className="menu-link">
+                  {/* <FontAwesomeIcon icon={faBaby} />
+                  <FontAwesomeIcon icon={faBan} /> */}
                     <Link to="/facts/introduction">Introduction</Link>
                   </div>
                 </div>

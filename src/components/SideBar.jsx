@@ -2,7 +2,7 @@ import wikipedia from "../assets/wikipedia.png";
 import icj from "../assets/icj.svg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faSearch, faBaby } from "@fortawesome/free-solid-svg-icons";
 export default function SideBar() {
   return (
     <div

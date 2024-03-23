@@ -25,7 +25,7 @@ export default function Navigation({ pages }) {
     // </section>
 
     <section>
-      <ul class="pagination" style="display:flex; flex-wrap: wrap">
+      <ul class="pagination" style="display:flex">
         {items.map(({ page, type, selected, ...item }, index) => {
           const currentPage = pages?.[page-1]?.page
           let children = null;

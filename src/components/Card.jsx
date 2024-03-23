@@ -11,7 +11,9 @@ export default function Card({ data, searchWord }) {
 
   const HighlightedText = ({ text, wordsToHighlight }) => {
     //find html tags and their contents
-    const parts = text.split(/(<strong>.*?<\/strong>)|(<sup class="reference">.*?<\/sup>)/g).filter(Boolean);
+    const parts = text
+      .split(/(<strong>.*?<\/strong>)|(<sup class="reference">.*?<\/sup>)/g)
+      .filter(Boolean);
 
     return (
       <span id="test">
@@ -85,7 +87,7 @@ export default function Card({ data, searchWord }) {
 
     // Replace URLs with <a> tags
     return text.replace(urlRegex, (url) => {
-      if(url.endsWith('.') || url.endsWith(';')) {
+      if (url.endsWith(".") || url.endsWith(";")) {
         url = url.slice(0, -1);
       }
       // return '<a href="' + url + '" target="_blank">' + url + "</a>";
@@ -117,13 +119,12 @@ export default function Card({ data, searchWord }) {
     // const jsx = parse(content);
     // return jsx;
 
-
     const plainText = renderToString(jsx);
     return <HighlightedText text={plainText} wordsToHighlight={[searchWord]} />;
 
-      // return <Highlighter
-      // searchWords={[searchWord]}
-      // textToHighlight={plainText}
+    // return <Highlighter
+    // searchWords={[searchWord]}
+    // textToHighlight={plainText}
     // />
   };
   return (
