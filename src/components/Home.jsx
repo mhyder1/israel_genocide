@@ -30,9 +30,24 @@ export default function Home() {
             Claims of South Africa
           </button>
         </Link>
-        <Link to="/search">
+        <Link to="/relief">
           <button type="button" class="btn btn-secondary btn-lg">
-            Search
+            The Relief Sought
+          </button>
+        </Link>
+        <Link to="/request">
+          <button type="button" class="btn btn-secondary btn-lg">
+            Request For Provisional Measures
+          </button>
+        </Link>
+        <Link to="/reservation">
+          <button type="button" class="btn btn-secondary btn-lg">
+            Reservation Of Rights
+          </button>
+        </Link>
+        <Link to="/appointment">
+          <button type="button" class="btn btn-secondary btn-lg">
+            Appointment Of Agent
           </button>
         </Link>
       </section>
