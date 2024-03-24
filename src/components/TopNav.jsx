@@ -11,7 +11,7 @@ export default function TopNav() {
             to="/introduction"
             className={({ isActive }) => (isActive ? "menu-active" : "")}
           >
-            I. Intro
+            I. <span className="menu-label">Intro</span>
           </NavLink>
           <div className="menu">
             <h4>Introduction</h4>
@@ -26,7 +26,7 @@ export default function TopNav() {
             to="/jurisdiction"
             className={({ isActive }) => (isActive ? "menu-active" : "")}
           >
-            II. Jurisdiction
+            II. <span className="menu-label">Jurisdiction</span>
           </NavLink>
           <div className="menu">
             <h4>Jurisdiction Of The Court</h4>
@@ -44,7 +44,7 @@ export default function TopNav() {
               location.pathname.includes("/facts") ? "menu-active" : ""
             }
           >
-            III. Facts
+            III. <span className="menu-label">Facts</span>
           </NavLink>
           <div className="menu">
             <h4>The Facts</h4>
@@ -167,7 +167,7 @@ export default function TopNav() {
             to="/claims"
             className={({ isActive }) => (isActive ? "menu-active" : "")}
           >
-            IV. Claims
+            IV. <span className="menu-label">Claims</span>
           </NavLink>
           <div className="menu">
             <h4>The Claims Of South Africa</h4>
@@ -180,7 +180,7 @@ export default function TopNav() {
             to="/relief"
             className={({ isActive }) => (isActive ? "menu-active" : "")}
           >
-            V. Relief
+            V. <span className="menu-label">Relief</span>
           </NavLink>
           <div className="menu">
             <h4>The Relief Sought</h4>
@@ -195,7 +195,7 @@ export default function TopNav() {
             to="/request"
             className={({ isActive }) => (isActive ? "menu-active" : "")}
           >
-            VI. Request
+            VI. <span className="menu-label">Request</span>
           </NavLink>
           <div className="menu">
             <h4>Request For Provisional Measures</h4>
@@ -246,7 +246,7 @@ export default function TopNav() {
             to="/reservation"
             className={({ isActive }) => (isActive ? "menu-active" : "")}
           >
-            VII. Reservation
+            VII. <span className="menu-label">Reservation</span>
           </NavLink>
           <div className="menu">
             <h4>Reservation Of Rights</h4>
@@ -259,7 +259,7 @@ export default function TopNav() {
             to="/appointment"
             className={({ isActive }) => (isActive ? "menu-active" : "")}
           >
-            VIII. Appointment
+            VIII. <span className="menu-label">Appointment</span>
           </NavLink>
           <div className="menu">
             <h4>Appointment Of Agent</h4>

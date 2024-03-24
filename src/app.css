@@ -15,10 +15,10 @@
 .search-link {
   color: white;
 }
-
 .side-bar {
-  width: 50px;
+  display: none;
 }
+
 
 /* button-menu */
 .button-menu {
@@ -51,25 +51,23 @@
 /* rgba(5, 108, 45, 1) */
 .home h1 {
   margin-bottom: 5rem;
-  font-size: 4rem;
+  font-size: 1.5rem;
   /* margin-left: auto;
   margin-right: auto; */
   /* margin-top: 4rem; */
-  width: 80%;
+  width: 100%;
 }
 
 /* Page */
 .page {
-  /* display: flex;
-  flex-direction: column; */
-  width: 100%;
+  width: 100vh;
   height: 100vh;
   justify-content: space-between;
   background: rgba(16, 26, 21, 1);
   background: radial-gradient(
     at left top,
     rgba(16, 26, 21, 1),
-    /* rgba(5, 108, 45, 1) */ rgba(0, 195, 76, 1)
+    rgba(0, 195, 76, 1)
   );
 }
 
@@ -119,9 +117,9 @@
   color: black;
   padding: 10px;
   visibility: hidden;
-  width: calc(100% - 50px);
+  width: 100%;
+  left: 0;
   min-height: 200px;
-  left: 50px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 1px solid green;
@@ -184,6 +182,7 @@ line-height: 20px; */
   border-top: 1px solid green;
 } */
 
+/* menu */
 .menu > li {
   display: flex;
 }
@@ -212,6 +211,10 @@ line-height: 20px; */
 .menu-link {
   display: flex;
   align-items: center;
+}
+
+.menu-label {
+  display: none;
 }
 
 .row-1 {
@@ -248,4 +251,29 @@ give .card a width start with 100vw, then add some padding maybe, give it a widt
 
 /* Desktop */
 @media (min-width: 768px) {
+  .side-bar {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .page {
+    width: 100%;
+  }
+  
+  .menu-label {
+    display: inline;
+  }
+
+  .top-nav .menu {
+    width: calc(100% - 50px);
+    left: 50px;
+  }
+
+  .home h1 {
+    width: 80%;
+    font-size: 4em;
+  }
 }

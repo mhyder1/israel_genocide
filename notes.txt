@@ -135,3 +135,10 @@ $1: "$2, $3, $4"
 
 
 part 30. sup is wrapped in blockquote. how to fix?
+
+
+li span for the dots mobile
+
+    font-size: 30px;
+    position: relative;
+    bottom: 14px;

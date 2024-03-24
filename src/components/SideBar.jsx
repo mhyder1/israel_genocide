@@ -7,12 +7,12 @@ export default function SideBar() {
   return (
     <div
       class="side-bar"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        padding: "10px 0",
-      }}
+      // style={{
+      //   display: "flex",
+      //   flexDirection: "column",
+      //   justifyContent: "space-between",
+      //   padding: "10px 0",
+      // }}
     >
       <Link to="/">
         <div style={{ width: "50px", cursor: "pointer" }}>
