@@ -142,3 +142,8 @@ li span for the dots mobile
     font-size: 30px;
     position: relative;
     bottom: 14px;
+
+tool tip fix
+
+https://jsfiddle.net/npx1weoq/
+https://rimdev.io/css-only-tooltip-for-all-screen-sizes/

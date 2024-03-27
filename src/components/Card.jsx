@@ -1,14 +1,17 @@
 import parse from "html-react-parser";
+import { useEffect } from "react";
 import Highlighter from "react-highlight-words";
 import renderToString from "preact-render-to-string";
 import { references } from "../../refs";
-import { useMatch } from "react-router-dom";
+import { useMatch, useLocation } from "react-router-dom";
 import TopNav from "./TopNav";
 import Crumbs from "./Crumbs";
 export default function Card({ data, searchWord }) {
   const match = useMatch("search/*");
+  
   const showMenu = match?.pathnameBase !== "/search";
-
+  const location = useLocation();
+  console.log(location)
   const HighlightedText = ({ text, wordsToHighlight }) => {
     //find html tags and their contents
     const parts = text
@@ -16,7 +19,7 @@ export default function Card({ data, searchWord }) {
       .filter(Boolean);
 
     return (
-      <span id="test">
+      <span>
         {parts.map((part, index) =>
           part.startsWith("<") ? (
             parse(part)
@@ -90,19 +93,15 @@ export default function Card({ data, searchWord }) {
       if (url.endsWith(".") || url.endsWith(";")) {
         url = url.slice(0, -1);
       }
-      // return '<a href="' + url + '" target="_blank">' + url + "</a>";
       return `<a href="${url}" target="_blank">${url}</a>`;
     });
   }
 
   function replacer(match, number) {
-    // console.log(number);
     if (number in references) {
       const tooltip = convertToHyperlinks(references[number]);
-      return `<sup class="reference">${number}<span class="hidden">${tooltip}</span></sup>`; // <span class="hidden">${references[number]}</span>
-      // return "<sup><span>hello</span></sup>"
+      return `<sup class="reference">${number}<span class="hidden tool-tip">${tooltip}</span></sup>`;
     }
-    // console.log(match)
     return match;
   }
 
@@ -110,15 +109,12 @@ export default function Card({ data, searchWord }) {
     // add references
     // content starts as plain text. we can do a replace with the plain text
     // find sup tag, get number, match number with object, replace in document
-    // console.log(content)
     const pattern = /<sup>(\d+)<\/sup>/g;
     const newContent = content.replace(pattern, replacer);
-    // console.log(newContent)
     //-------------------------------------
-    const jsx = parse(newContent);
-    // const jsx = parse(content);
-    // return jsx;
 
+    const jsx = parse(newContent);
+    // console.log(jsx)
     const plainText = renderToString(jsx);
     return <HighlightedText text={plainText} wordsToHighlight={[searchWord]} />;
 
@@ -127,6 +123,53 @@ export default function Card({ data, searchWord }) {
     // textToHighlight={plainText}
     // />
   };
+  // const refs = document.querySelectorAll(".reference");
+  // console.log(refs.length)
+  useEffect(() => {
+    console.log('change')
+    //getBoundingClientRect, window.innerWidth, getClientRects
+    // window.
+    // console.log(window.innerWidth)
+    const cardBody = document.querySelector(".card-body");
+    const height = cardBody.clientHeight / 2;
+    const width = cardBody.clientWidth / 2;
+    // console.log(cardBody.getBoundingClientRect());
+    // const { width, height } = cardBody.getBoundingClientRect()
+    const refs = document.querySelectorAll(".reference");
+    refs.forEach((ref) => {
+      // console.log(ref.getBoundingClientRect());
+      const { top, left } = ref.getBoundingClientRect();
+      const toolTip = ref.querySelector('span')
+      // console.log(toolTip)
+      if(top < height && left < width) {
+        // console.log("top left")
+        toolTip.style.top = "0px";
+        toolTip.style.left = "0px";
+      }
+      if(top < height && left > width) {
+        // console.log(" top right")
+        toolTip.style.top = "0px";
+        toolTip.style.right = "0px";
+      }
+      if(top > height && left < width) {
+        // console.log('bottom left')
+        toolTip.style.bottom = "0px";
+        toolTip.style.left = "0px";
+      }
+      if(top > height && left > width) {
+        console.log("bottom right")
+        toolTip.style.right = "0px";
+        toolTip.style.bottom = "0px";
+      }
+      // console.log('hello')
+      // console.log(ref)
+
+      // console.log(ref.querySelector('.tool-tip'))
+      // ref.querySelector(".tool-tip").style.color = "red";
+    });
+  }, [location.pathname]);
+
+  // console.log({refs})
   return (
     <>
       {showMenu && <TopNav />}
