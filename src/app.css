@@ -238,19 +238,29 @@ line-height: 20px; */
   line-height: 1.85rem;
 }
 
+.menu-section h4 {
+  font-size: 0.875rem;
+  color: green;
+  text-decoration: underline;
+  /* font-weight: 700; */
+}
 .menu-body {
   display: flex;
   flex-direction: column;
 }
 
-.menu-section h4 {
-  font-size: 0.875rem;
-  /* font-weight: 700; */
-}
+
 
 .menu-link {
   display: flex;
   align-items: center;
+}
+
+.top-nav .menu-link a:hover {
+  /* border-bottom: 1px solid red; */
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
 }
 
 .menu-label {
