@@ -20,8 +20,8 @@ export default function Home() {
             Jurisdiction
           </button>
         </Link>
-        <Link to="/facts">
-          <button type="button" class="btn btn-secondary btn-lg">
+        <Link to="/facts/introduction">
+          <button type="button" class="btn btn-danger btn-lg">
             The Facts
           </button>
         </Link>
