@@ -11,7 +11,6 @@ export default function Card({ data, searchWord }) {
   
   const showMenu = match?.pathnameBase !== "/search";
   const location = useLocation();
-  console.log(location)
   const HighlightedText = ({ text, wordsToHighlight }) => {
     //find html tags and their contents
     const parts = text
@@ -106,7 +105,6 @@ export default function Card({ data, searchWord }) {
   }
 
   const TextDisplay = ({ content }) => {
-    // add references
     // content starts as plain text. we can do a replace with the plain text
     // find sup tag, get number, match number with object, replace in document
     const pattern = /<sup>(\d+)<\/sup>/g;
@@ -114,7 +112,6 @@ export default function Card({ data, searchWord }) {
     //-------------------------------------
 
     const jsx = parse(newContent);
-    // console.log(jsx)
     const plainText = renderToString(jsx);
     return <HighlightedText text={plainText} wordsToHighlight={[searchWord]} />;
 
@@ -123,49 +120,32 @@ export default function Card({ data, searchWord }) {
     // textToHighlight={plainText}
     // />
   };
-  // const refs = document.querySelectorAll(".reference");
-  // console.log(refs.length)
+
   useEffect(() => {
-    console.log('change')
-    //getBoundingClientRect, window.innerWidth, getClientRects
-    // window.
-    // console.log(window.innerWidth)
     const cardBody = document.querySelector(".card-body");
-    const height = cardBody.clientHeight / 2;
-    const width = cardBody.clientWidth / 2;
-    // console.log(cardBody.getBoundingClientRect());
-    // const { width, height } = cardBody.getBoundingClientRect()
+    const height = cardBody?.clientHeight / 2;
+    const width = cardBody?.clientWidth / 2;
     const refs = document.querySelectorAll(".reference");
+    const zeroPx = "0px";
     refs.forEach((ref) => {
-      // console.log(ref.getBoundingClientRect());
       const { top, left } = ref.getBoundingClientRect();
       const toolTip = ref.querySelector('span')
-      // console.log(toolTip)
       if(top < height && left < width) {
-        // console.log("top left")
-        toolTip.style.top = "0px";
-        toolTip.style.left = "0px";
+        toolTip.style.top = zeroPx;
+        toolTip.style.left = zeroPx;
       }
       if(top < height && left > width) {
-        // console.log(" top right")
-        toolTip.style.top = "0px";
-        toolTip.style.right = "0px";
+        toolTip.style.top = zeroPx;
+        toolTip.style.right = zeroPx;
       }
       if(top > height && left < width) {
-        // console.log('bottom left')
-        toolTip.style.bottom = "0px";
-        toolTip.style.left = "0px";
+        toolTip.style.bottom = zeroPx;
+        toolTip.style.left = zeroPx;
       }
       if(top > height && left > width) {
-        console.log("bottom right")
-        toolTip.style.right = "0px";
-        toolTip.style.bottom = "0px";
+        toolTip.style.right = zeroPx;
+        toolTip.style.bottom = zeroPx;
       }
-      // console.log('hello')
-      // console.log(ref)
-
-      // console.log(ref.querySelector('.tool-tip'))
-      // ref.querySelector(".tool-tip").style.color = "red";
     });
   }, [location.pathname]);
 

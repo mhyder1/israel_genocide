@@ -28,6 +28,10 @@
   flex-wrap: wrap;
 }
 
+.pagination li {
+  height: 50px;
+}
+
 /* Home */
 .home {
   background: rgba(16, 26, 21, 1);
@@ -141,6 +145,16 @@
   display: flex;
   margin-top: 5px;
   margin-left: 5px;
+}
+
+.form input {
+  width: 50%;
+  margin-left: 24px;
+}
+
+.form button,
+.form button:hover {
+  color: white;
 }
 
 /* yellow circle */

@@ -44,7 +44,7 @@ export default function Search() {
         <input
           className="form-control form-control-sm"
           type="text"
-          placeholder="search"
+          placeholder="Search for a term in the ICJ document"
           name="search"
           value={searchTerm}
           onChange={handleChange}
