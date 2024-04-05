@@ -32,6 +32,11 @@
   height: 50px;
 }
 
+.pagination {
+  width: 100vw;
+  overflow: auto;
+}
+
 /* Home */
 .home {
   background: rgba(16, 26, 21, 1);
@@ -268,7 +273,7 @@ line-height: 20px; */
 }
 
 .row-1 {
-  display: flex;
+  display: block;
   gap: 20px;
   border-bottom: 1px solid green;
   padding-bottom: 10px;
@@ -277,7 +282,7 @@ line-height: 20px; */
 
 .row-2 {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .top-nav .menu-link a:link,
@@ -325,5 +330,21 @@ give .card a width start with 100vw, then add some padding maybe, give it a widt
   .home h1 {
     width: 80%;
     font-size: 4em;
+  }
+
+  .button-menu {
+    width: 50%;
+  }
+
+  .row-1 {
+    display: flex;
+  }
+
+  .row-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pagination {
+    width: calc(100vw - 50px);
   }
 }
