@@ -8,7 +8,7 @@ import TopNav from "./TopNav";
 import Crumbs from "./Crumbs";
 export default function Card({ data, searchWord }) {
   const match = useMatch("search/*");
-  
+
   const showMenu = match?.pathnameBase !== "/search";
   const location = useLocation();
   const HighlightedText = ({ text, wordsToHighlight }) => {
@@ -122,16 +122,7 @@ export default function Card({ data, searchWord }) {
   };
 
   useEffect(() => {
-    
     const cardBody = document.querySelector(".card-body");
-    
-    if(cardBody.clientWidth < 768) {
-      console.log(cardBody.clientWidth)
-      console.log('mobile')
-      //find calculation to keep tooltip centered
-      // tool tip width should be almost 100 vw
-      // calculate offset
-    } else {
 
     const height = cardBody?.clientHeight / 2;
     const width = cardBody?.clientWidth / 2;
@@ -139,25 +130,33 @@ export default function Card({ data, searchWord }) {
     const zeroPx = "0px";
     refs.forEach((ref) => {
       const { top, left } = ref.getBoundingClientRect();
-      const toolTip = ref.querySelector('span')
-      if(top < height && left < width) {
-        toolTip.style.top = zeroPx;
-        toolTip.style.left = zeroPx;
-      }
-      if(top < height && left > width) {
-        toolTip.style.top = zeroPx;
-        toolTip.style.right = zeroPx;
-      }
-      if(top > height && left < width) {
-        toolTip.style.bottom = zeroPx;
-        toolTip.style.left = zeroPx;
-      }
-      if(top > height && left > width) {
-        toolTip.style.right = zeroPx;
-        toolTip.style.bottom = zeroPx;
+      const toolTip = ref.querySelector("span");
+
+      if (cardBody.clientWidth < 768) {
+        console.log(cardBody.clientWidth);
+        console.log("mobile");
+        //find calculation to keep tooltip centered
+        // tool tip width should be almost 100 vw
+        // calculate offset
+      } else { // desktop screens
+        if (top < height && left < width) {
+          toolTip.style.top = zeroPx;
+          toolTip.style.left = zeroPx;
+        }
+        if (top < height && left > width) {
+          toolTip.style.top = zeroPx;
+          toolTip.style.right = zeroPx;
+        }
+        if (top > height && left < width) {
+          toolTip.style.bottom = zeroPx;
+          toolTip.style.left = zeroPx;
+        }
+        if (top > height && left > width) {
+          toolTip.style.right = zeroPx;
+          toolTip.style.bottom = zeroPx;
+        }
       }
     });
-  }
   }, [location.pathname]);
 
   return (
