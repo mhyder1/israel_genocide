@@ -27,6 +27,7 @@ export default function Navigation({ pages }) {
     <section>
       <ul class="pagination" style="display:flex">
         {items.map(({ page, type, selected, ...item }, index) => {
+          // console.log(type, item)
           const currentPage = pages?.[page-1]?.page
           let children = null;
           if (type === "start-ellipsis" || type === "end-ellipsis") {
@@ -54,7 +55,9 @@ export default function Navigation({ pages }) {
               </button>
             );
           }
-
+          if (type === 'next' && item.disabled) {
+            console.log('show next section link')
+          }
           return !!pages.length && <li key={index}>{children}</li>;
         })}
       </ul>

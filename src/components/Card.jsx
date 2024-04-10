@@ -122,7 +122,17 @@ export default function Card({ data, searchWord }) {
   };
 
   useEffect(() => {
+    
     const cardBody = document.querySelector(".card-body");
+    
+    if(cardBody.clientWidth < 768) {
+      console.log(cardBody.clientWidth)
+      console.log('mobile')
+      //find calculation to keep tooltip centered
+      // tool tip width should be almost 100 vw
+      // calculate offset
+    } else {
+
     const height = cardBody?.clientHeight / 2;
     const width = cardBody?.clientWidth / 2;
     const refs = document.querySelectorAll(".reference");
@@ -147,9 +157,9 @@ export default function Card({ data, searchWord }) {
         toolTip.style.bottom = zeroPx;
       }
     });
+  }
   }, [location.pathname]);
 
-  // console.log({refs})
   return (
     <>
       {showMenu && <TopNav />}

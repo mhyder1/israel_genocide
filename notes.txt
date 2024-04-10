@@ -119,22 +119,11 @@ height: 90vh;
     width: 96%;
     margin: 10px auto;
 
-regex search
-([.])([,;.])(\d+)
-$1$2<sup>$3</sup>
 
-([.])([”])(\d+)
-
-(\d{2})([.])(\d+)
-
-([.])(\d+)
-
-
-^(\d+) (.+?), (.+?), (.+)
-$1: "$2, $3, $4"
 
 
 part 30. sup is wrapped in blockquote. how to fix?
+
 
 
 li span for the dots mobile
